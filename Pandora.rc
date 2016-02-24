@@ -1,0 +1,700 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\Pandora.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Pandora_Q2.ICO"
+IDR_PANDORTYPE          ICON    DISCARDABLE     "res\\terminal.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    SEPARATOR
+    BUTTON      ID_FILE_CONNECT
+    BUTTON      ID_FILE_DISCONNECT
+    SEPARATOR
+    BUTTON      ID_EDIT_COPY
+    SEPARATOR
+    BUTTON      ID_COMMANDS_FLIPOFF
+    BUTTON      ID_COMMANDS_SALUTE
+    BUTTON      ID_COMMANDS_TAUNT
+    BUTTON      ID_COMMANDS_WAVE
+    BUTTON      ID_COMMANDS_POINT
+    BUTTON      ID_COMMANDS_SUICIDE
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        POPUP "&Web Resources"
+        BEGIN
+            MENUITEM "&Pandora Bot Web",            ID_WEB_PANDORA
+            MENUITEM "&About the Author",           ID_WEB_DARRIN
+            MENUITEM "&DVC Web Site",               ID_WEB_DVC
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&About Pandora...",           ID_APP_ABOUT
+    END
+END
+
+IDR_PANDORTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Connect",                    ID_FILE_CONNECT
+        MENUITEM "&Disconnect",                 ID_FILE_DISCONNECT
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM SEPARATOR
+        MENUITEM "C&lear",                      ID_EDIT_CLEAR
+    END
+    POPUP "&Commands"
+    BEGIN
+        MENUITEM "&Flipoff\tCtrl+F",            ID_COMMANDS_FLIPOFF
+        MENUITEM "&Salute\tCtrl+S",             ID_COMMANDS_SALUTE
+        MENUITEM "&Taunt\tCtrl+T",              ID_COMMANDS_TAUNT
+        MENUITEM "&Wave\tCtrl+W",               ID_COMMANDS_WAVE
+        MENUITEM "&Point\tCtrl+P",              ID_COMMANDS_POINT
+        MENUITEM SEPARATOR
+        MENUITEM "&Suicide\tCtrl+K",            ID_COMMANDS_SUICIDE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Bot Info",                   ID_VIEW_BOTINFO
+        MENUITEM "&Console",                    ID_VIEW_CONSOLE
+        MENUITEM SEPARATOR
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+    END
+    POPUP "&Help"
+    BEGIN
+        POPUP "&Web Resources"
+        BEGIN
+            MENUITEM "&Pandora Bot Web",            ID_WEB_PANDORA
+            MENUITEM "&About the Author",           ID_WEB_DARRIN
+            MENUITEM "&DVC Web Site",               ID_WEB_DVC
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&About Pandora...",           ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_COMMANDS_FLIPOFF,    VIRTKEY, CONTROL, NOINVERT
+    "K",            ID_COMMANDS_SUICIDE,    VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_COMMANDS_POINT,      VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_COMMANDS_SALUTE,     VIRTKEY, CONTROL, NOINVERT
+    "T",            ID_COMMANDS_TAUNT,      VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "W",            ID_COMMANDS_WAVE,       VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 290, 146
+STYLE DS_3DLOOK | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Pandora Bot for Quake 2"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,7,20,20
+    LTEXT           "Pandora Bot for Quake 2 (v2.00.60)",IDC_STATIC,36,7,119,
+                    8,SS_NOPREFIX
+    LTEXT           "Copyright © 1998 by Darrin W. Cullop (dcullop@Arizona.EDU)",
+                    IDC_STATIC,35,16,196,8
+    DEFPUSHBUTTON   "&OK",IDOK,251,7,32,14,WS_GROUP
+    EDITTEXT        IDC_THANK_YOU,17,67,255,24,ES_MULTILINE | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP
+    EDITTEXT        IDC_GREETINGS,17,108,255,25,ES_MULTILINE | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP
+    LTEXT           "Program graphics by Michael Kouvatsos\nPandora skin by Gary Frye",
+                    IDC_GRAPHICS_INFO,36,33,128,18
+    LTEXT           "(nosferatu@deadlyvenom.com)\n(poser@flash.net)",
+                    IDC_GRAPHICS_INFO2,173,33,103,18
+    GROUPBOX        "Special thanks",IDC_STATIC,7,58,276,38
+    GROUPBOX        "Greetings to",IDC_STATIC,7,97,276,42
+END
+
+IDD_CONNECT_DIALOG DIALOG DISCARDABLE  0, 0, 277, 47
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Connect to a Q2 Server"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,220,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,220,24,50,14
+    LTEXT           "Enter the IP or hostname of the server to connect to",
+                    IDC_CONNECT_PROMPT,7,14,172,8
+    EDITTEXT        IDC_SERVER_ADDRESS,7,24,208,14,ES_AUTOHSCROLL
+END
+
+IDD_BOT_INFO DIALOG DISCARDABLE  0, 0, 411, 115
+STYLE DS_3DLOOK | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_CHATTEXT,7,94,295,13,ES_WANTRETURN
+    DEFPUSHBUTTON   "&Say",IDC_BUTTON_SAY,305,94,31,13
+    PUSHBUTTON      "&Team",IDC_BUTTON_TEAM,339,94,31,13
+    PUSHBUTTON      "&CMD",IDC_BUTTON_CMD,373,94,31,13
+    EDITTEXT        IDC_HEALTH,43,17,90,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_WEAPON,43,47,90,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_FRAGS,43,32,90,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Health",IDC_HEALTH_LABEL,13,17,30,12,SS_CENTERIMAGE
+    LTEXT           "Frags",IDC_FRAG_LABEL,13,32,30,12,SS_CENTERIMAGE
+    LTEXT           "Weapon",IDC_WEAPON_LABEL,13,47,30,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_ATTACK_NAME,176,17,90,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_ATTACK_DIST,176,47,90,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_ATTACK_POS,176,32,90,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Name",IDC_ATTACK_NAME_LABEL,146,17,30,12,SS_CENTERIMAGE
+    LTEXT           "Position",IDC_ATTACK_POS_LABEL,146,32,30,12,
+                    SS_CENTERIMAGE
+    LTEXT           "Distance",IDC_ATTACK_DIST_LABEL,146,47,30,12,
+                    SS_CENTERIMAGE
+    GROUPBOX        "Attack Target Information",IDC_ATTACK_GROUP,141,7,130,
+                    55
+    EDITTEXT        IDC_MOVE_NAME,310,17,90,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_MOVE_DIST,310,47,90,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_MOVE_POS,310,32,90,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Name",IDC_MOVE_NAME_LABEL,280,17,30,12,SS_CENTERIMAGE
+    LTEXT           "Position",IDC_MOVE_POS_LABEL,280,32,30,12,
+                    SS_CENTERIMAGE
+    LTEXT           "Distance",IDC_MOVE_DIST_LABEL,280,47,30,12,
+                    SS_CENTERIMAGE
+    GROUPBOX        "Move Goal Information",IDC_MOVE_GROUP,274,7,130,55
+    EDITTEXT        IDC_BOT_VELOCITY,43,77,90,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_BOT_POS,43,62,90,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Position",IDC_BOT_POS_LABEL,13,62,30,12,SS_CENTERIMAGE
+    LTEXT           "Velocity",IDC_BOT_VELOCITY_LABEL,13,77,30,12,
+                    SS_CENTERIMAGE
+    GROUPBOX        "Bot Information",IDC_BOTINFO_GROUP,7,7,131,85
+    GROUPBOX        "Bot AI Information",IDC_BOT_AI_INFO_GROUP,141,63,263,29
+    EDITTEXT        IDC_AI_INFO_TEXT,146,73,254,12,ES_READONLY | NOT 
+                    WS_TABSTOP
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,60,0
+ PRODUCTVERSION 2,0,60,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Pre-AI Alpha\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Pandora Bot for Quake 2\0"
+            VALUE "FileVersion", "2.00.60\0"
+            VALUE "InternalName", "Pandora Bot\0"
+            VALUE "LegalCopyright", "Copyright © 1998 by Darrin W. Cullop\0"
+            VALUE "LegalTrademarks", "Quake and Quake 2 are registered trademarks of Id Software, Inc.\0"
+            VALUE "OriginalFilename", "Pandora.exe\0"
+            VALUE "ProductName", "Pandora Bot\0"
+            VALUE "ProductVersion", "2.00.60\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 283
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    IDD_CONNECT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 270
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 38
+    END
+
+    IDD_BOT_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 404
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Pandora Bot"
+    IDR_PANDORTYPE          "\nPandora\nPandoa\n\n\nPandora.Document\nPandora Document"
+    IDR_PANDORTYPE2         "\n\n\n\n\nPandora.Document\nPandora Document"
+    IDR_BOTINFO_TYPE        "\n\n\n\n\nPandora.Document\nPandora Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Pandora Bot"
+    AFX_IDS_IDLEMESSAGE     "Pandora Bot for Quake 2"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_PING       "Ping:  0000"
+    ID_INDICATOR_GAME_TIME  "Level:  000:00:00"
+    ID_INDICATOR_TOTAL_TIME "Total:  000:00:00"
+    ID_INDICATOR_CONN       "Packet Loss:  000.0%"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information\nAbout"
+    ID_APP_EXIT             "Quit the application; disconnects from the server\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Clear the console display\nClear Console"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_CONNECT         "Connect to a Quake 2 Server\nConnect"
+    ID_VIEW_CONSOLE         "Display the Quake 2 console\nConsole"
+    ID_VIEW_STATUS          "Toggle the bot status window\nBot Info"
+    ID_WEB_PANDORA          "Visit the Pandora Bot web site\nPandora Web"
+    ID_WEB_DARRIN           "Visit Darrin Cullop's personal web page\nDarrin's Web"
+    ID_WEB_DVC              "Visit the web site for the Deadly Venom Clan\nDVC"
+    ID_FILE_DISCONNECT      "Disconnect from the current server\nDisconnect"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CONNECTED           "Connection has been established!\n"
+    IDS_DISCONNECTED        "Server disconnected.\n"
+    IDS_RECONNECT           "Reconnecting ...\n"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_BOT_KILLED          "The bot has been killed!"
+    IDS_BOT_RESPAWNED       "The bot has respawned!"
+    IDS_CHAT_GREETING1      "I am Pandora!"
+    IDS_CHAT_GREETING2      "A completely autonomous client-side bot for Quake 2."
+    IDS_WEB_PANDORA         "http://www.opt-sci.Arizona.EDU/Pandora/"
+    IDS_WEB_DARRIN          "http://www.opt-sci.Arizona.EDU/Darrin/"
+    IDS_WEB_DVC             "http://www.DeadlyVenom.com/"
+    IDS_CONSOLE_TITLE       "Console Display"
+    IDS_BOT_INFO_TITLE      "Pandora Bot Stats"
+    IDS_FMT_MAINTITLE       "%s on %s"
+    IDS_EXPIRED_NOTICE      "This version of Pandora Bot has expired.\nDo you wish to visit the web site to check for a newer version?"
+    IDS_FMT_NEWTITLE        "unconnected"
+    IDS_FMT_DISCONNECT_TITLE "disconnected from %s"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_BOTINFO         "Display the bot info window\nBot Info"
+    ID_COMMANDS_SUICIDE     "Have the bot kill itself\nSuicide"
+    ID_COMMANDS_FLIPOFF     "Give another player the bird\nFlipoff"
+    ID_COMMANDS_SALUTE      "Salute the other players\nSalute"
+    ID_COMMANDS_TAUNT       "Taunt the other players\nTaunt"
+    ID_COMMANDS_WAVE        "Wave at the other players\nWave"
+    ID_COMMANDS_POINT       "Point in the current direction\nPoint"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FMT_CMD_WAVE        "wave %d"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_CONFIGSTRING    "Invalid ConfigString sequence"
+    IDS_ERR_NETWORK_READ    "Error Reading Network Data"
+    IDS_ERR_SVC_BAD         "Received a SVC_BAD message"
+    IDS_ERR_UNKNOWN_MESSAGE "Received an unknown message type"
+    IDS_ERR_UNKNOWN_TEMP_ENTITY "Unknown temporary entity description"
+    IDS_ERR_INCORRECT_SERVER_VERSION "Incorrect server version"
+    IDS_ERR_SVC_DOWNLOAD    "Received a SVC_DOWNLOAD message"
+    IDS_ERR_SVC_DELTAPACKETENTITIES 
+                            "Received a SVC_DELTAPACKETENTITIES message"
+    IDS_ERR_MUZZLEFLASH     "Received MuzzleFlash for an invalid entity"
+    IDS_ERR_MUZZLEFLASH2    "Received MuzzleFlash2 for an invalid entity"
+    IDS_ERR_NEW_FRAME       "Invalid Frame Update"
+    IDS_ERR_TIMEOUT         "The connection has timed out!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CMD_DISCONNECT      "disconnect"
+    IDS_CMD_CHALLENGE_REQUEST "getchallenge\n"
+    IDS_CMD_CONNECT_REQUEST "connect"
+    IDS_CMD_SUICIDE         "kill"
+    IDS_CMD_USE             "use %s"
+    IDS_CMD_DROP            "drop %s"
+    IDS_CMD_INVEN           "inven"
+    IDS_CMD_RECONNECT       "reconnect"
+    IDS_CMD_PRECACHE        "precache"
+    IDS_CMD_BEGIN           "begin"
+    IDS_CMD_CONSOLE         "cmd "
+    IDS_CMD_NEW             "new"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FMT_CLIENT_INFO     "\\msg\\%d\\rate\\%d\\fov\\%d\\skin\\%s\\name\\%s\\hand\\%d"
+    IDS_FMT_IND_PACKET_LOSS "Packet Loss: %3.1f%%"
+    IDS_FMT_IND_PING        "Ping: %d"
+    IDS_FMT_IND_GAME_TIME   "Level: %s"
+    IDS_FMT_IND_TOTAL_TIME  "Total: %s"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUT_THANKYOU_LIST "My family, my ""Uncle"" Bill, Dr. François Cellier, Robert Elsner, Kekoa Proudfoot, Ken Schwinn, Wayne Bell, Oliver Dial, and of course, John Carmack, and the rest of the id software crew"
+    IDS_ABOUT_GREETING_LIST "Tree, Nos, Crypto, and the rest of my DVC brethren, Arachne, Terminator, Sockman, Cube, S L + A G, Presto, Muonman, Skeff, ZXLWNO, Yyz, Lady Viper, Judy Jetson, TankMan, Xytek, PharCyde, and Tippy the cat"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_BOT_NAME            "Pandora Bot"
+    IDS_BOT_SKIN            "female/metallica"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WEAP_BLASTER        "Blaster"
+    IDS_WEAP_BLASTER_MODEL  "models/weapons/g_blast/tris.md2"
+    IDS_WEAP_BLASTER_IMAGE  "w_blaster"
+    IDS_WEAP_BLASTER_VIEW   "models/weapons/v_blast/tris.md2"
+    IDS_WEAP_BLASTER_VIS    "w_blaster.md2"
+    IDS_WEAP_BLASTER_AMMO   "Blaster"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WEAP_SHOTGUN        "Shotgun"
+    IDS_WEAP_SHOTGUN_MODEL  "models/weapons/g_shotg/tris.md2"
+    IDS_WEAP_SHOTGUN_IMAGE  "w_shotgun"
+    IDS_WEAP_SHOTGUN_VIEW   "models/weapons/v_shotg/tris.md2"
+    IDS_WEAP_SHOTGUN_VIS    "w_shotgun.md2"
+    IDS_WEAP_SHOTGUN_AMMO   "Shells"
+    IDS_WEAP_SSG            "Super Shotgun"
+    IDS_WEAP_SSG_MODEL      "models/weapons/g_shotg2/tris.md2"
+    IDS_WEAP_SSG_IMAGE      "w_sshotgun"
+    IDS_WEAP_SSG_VIEW       "models/weapons/v_shotg2/tris.md2"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WEAP_SSG_VIS        "w_sshotgun.md2"
+    IDS_WEAP_SSG_AMMO       "Shells"
+    IDS_WEAP_MACHGUN        "Machinegun"
+    IDS_WEAP_MACHGUN_MODEL  "models/weapons/g_machn/tris.md2"
+    IDS_WEAP_MACHGUN_IMAGE  "w_machinegun"
+    IDS_WEAP_MACHGUN_VIEW   "models/weapons/v_machn/tris.md2"
+    IDS_WEAP_MACHGUN_VIS    "w_machinegun.md2"
+    IDS_WEAP_MACHGUN_AMMO   "Bullets"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WEAP_HYPER_IMAGE    "w_hyperblaster"
+    IDS_WEAP_HYPER_VIEW     "models/weapons/v_hyperb/tris.md2"
+    IDS_WEAP_HYPER_VIS      "w_hyperblaster.md2"
+    IDS_WEAP_HYPER_AMMO     "Cells"
+    IDS_WEAP_RAILGUN        "Railgun"
+    IDS_WEAP_RAILGUN_MODEL  "models/weapons/g_rail/tris.md2"
+    IDS_WEAP_RAILGUN_IMAGE  "w_railgun"
+    IDS_WEAP_RAILGUN_VIEW   "models/weapons/v_rail/tris.md2"
+    IDS_WEAP_RAILGUN_VIS    "w_railgun.md2"
+    IDS_WEAP_RAILGUN_AMMO   "Slugs"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WEAP_CHAIN          "Chaingun"
+    IDS_WEAP_CHAIN_MODEL    "models/weapons/g_chain/tris.md2"
+    IDS_WEAP_CHAIN_IMAGE    "w_chaingun"
+    IDS_WEAP_CHAIN_VIEW     "models/weapons/v_chain/tris.md2"
+    IDS_WEAP_CHAIN_VIS      "w_chaingun.md2"
+    IDS_WEAP_CHAIN_AMMO     "Bullets"
+    IDS_WEAP_LAUNCHER       "Grenade Launcher"
+    IDS_WEAP_LAUNCHER_MODEL "models/weapons/g_launch/tris.md2"
+    IDS_WEAP_LAUNCHER_IMAGE "w_glauncher"
+    IDS_WEAP_LAUNCHER_VIEW  "models/weapons/v_launch/tris.md2"
+    IDS_WEAP_LAUNCHER_VIS   "w_glauncher.md2"
+    IDS_WEAP_LAUNCHER_AMMO  "Grenades"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WEAP_ROCKET         "Rocket Launcher"
+    IDS_WEAP_ROCKET_MODEL   "models/weapons/g_rocket/tris.md2"
+    IDS_WEAP_ROCKET_IMAGE   "w_rlauncher"
+    IDS_WEAP_ROCKET_VIEW    "models/weapons/v_rocket/tris.md2"
+    IDS_WEAP_ROCKET_VIS     "w_rlauncher.md2"
+    IDS_WEAP_ROCKET_AMMO    "Rockets"
+    IDS_WEAP_HYPER          "HyperBlaster"
+    IDS_WEAP_HYPER_MODEL    "models/weapons/g_hyperb/tris.md2"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WEAP_BFG10K         "BFG10K"
+    IDS_WEAP_BFG10K_MODEL   "models/weapons/g_bfg/tris.md2"
+    IDS_WEAP_BFG10K_IMAGE   "w_bfg"
+    IDS_WEAP_BFG10K_VIEW    "models/weapons/v_bfg/tris.md2"
+    IDS_WEAP_BFG10K_VIS     "w_bfg.md2"
+    IDS_WEAP_BFG10K_AMMO    "Cells"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CMD_SAY             "say %s"
+    IDS_CMD_SAYTEAM         "say_team %s"
+    IDS_CMD_CHALLENGE_ACCEPT "challenge"
+    IDS_CMD_CHALLENGE_DENY  "print"
+    IDS_CMD_CONNECT_RESPONSE "client_connect"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\Pandora.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

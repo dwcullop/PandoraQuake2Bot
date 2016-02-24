@@ -1,0 +1,89 @@
+# 
+# 
+# 
+#
+
+[ModelTypes]
+
+32, models/items/ammo/bullets/medium/tris.md2
+33, models/items/ammo/cells/medium/tris.md2
+34, models/items/ammo/grenades/medium/tris.md2
+35, models/items/ammo/rockets/medium/tris.md2
+36, models/items/ammo/shells/medium/tris.md2
+37, models/items/ammo/slugs/medium/tris.md2
+66, models/items/armor/jacket/tris.md2
+67, models/items/armor/shard/tris.md2
+68, models/items/armor/shield/tris.md2
+96, models/objects/grenade/tris.md2
+97, models/objects/grenade2/tris.md2
+98, models/objects/laser/tris.md2
+99, models/objects/rocket/tris.md2
+100, models/objects/dmspot/tris.md2
+101, sprites/s_bfg1.sp2
+128, models/items/healing/large/tris.md2
+129, models/items/healing/medium/tris.md2
+130, models/items/healing/stimpack/tris.md2
+160, models/items/adrenal/tris.md2
+161, models/items/band/tris.md2
+162, models/items/breather/tris.md2
+163, models/items/enviro/tris.md2
+164, models/items/invulner/tris.md2
+165, models/items/mega_h/tris.md2
+166, models/items/pack/tris.md2
+167, models/items/quaddama/tris.md2
+168, models/items/silencer/tris.md2
+192, models/weapons/v_blast/tris.md2
+193, models/weapons/v_shotg/tris.md2
+194, models/weapons/v_shotg2/tris.md2
+195, models/weapons/v_machn/tris.md2
+196, models/weapons/v_chain/tris.md2
+197, models/weapons/v_launch/tris.md2
+198, models/weapons/v_rocket/tris.md2
+199, models/weapons/v_rail/tris.md2
+200, models/weapons/v_hyperb/tris.md2
+201, models/weapons/v_bfg/tris.md2
+225, models/weapons/g_shotg/tris.md2
+226, models/weapons/g_shotg2/tris.md2
+227, models/weapons/g_machn/tris.md2
+228, models/weapons/g_chain/tris.md2
+229, models/weapons/g_launch/tris.md2
+230, models/weapons/g_rocket/tris.md2
+231, models/weapons/g_rail/tris.md2
+232, models/weapons/g_hyperb/tris.md2
+233, models/weapons/g_bfg/tris.md2
+
+# No Armor Info Yet
+[Armor]
+
+
+[Danger]
+# Danger must appear before weapons
+# Format is Speed, Damage, BlastDamage, BlastRadius, EnergyWeapon
+
+600,125,125,165,0
+600,120,120,160,0
+1000,15,0,0,1
+550,120,120,120,0
+0,0,0,0,0
+400,200,200,1000,1
+0,100,0,0,0
+0,8,0,0,0
+0,48,0,0,0
+0,120,0,0,0
+
+[Weapons]
+# Format is ViewType, InvIndex, AmmoInvIndex, AmmoType, DangerIndex, MinRange
+#	IdealRange, MaxRange, AmmoUsed, FramesPerShot, MuzzleFlash
+0,7,20,1,2,0,50,1000,0,3,0
+1,8,18,4,8,0,50,1000,1,3,2
+2,9,18,4,9,0,50,500,2,3,13
+3,10,19,0,7,0,50,2000,1,2,1
+4,11,19,0,7,0,50,2000,1,1,3
+5,13,12,2,1,170,340,1000,1,3,8
+6,14,21,3,3,130,260,1000,1,3,7
+7,16,22,5,6,0,50,2000,1,15,6
+8,15,20,1,2,0,50,1000,1,3,14
+9,17,20,1,5,110,220,1000,50,18,12
+
+[Healing]
+

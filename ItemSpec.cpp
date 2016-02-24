@@ -1,0 +1,27 @@
+// ItemSpec.cpp: implementation of the CItemSpec class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "Pandora.h"
+#include "ItemSpec.h"
+
+#ifdef _DEBUG
+#undef THIS_FILE
+static char THIS_FILE[]=__FILE__;
+#define new DEBUG_NEW
+#endif
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+CItemSpec::CItemSpec()
+{
+
+}
+
+CItemSpec::~CItemSpec()
+{
+
+}

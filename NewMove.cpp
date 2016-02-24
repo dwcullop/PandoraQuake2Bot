@@ -1,0 +1,27 @@
+// NewMove.cpp: implementation of the CNewMove class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "Pandora.h"
+#include "NewMove.h"
+
+#ifdef _DEBUG
+#undef THIS_FILE
+static char THIS_FILE[]=__FILE__;
+#define new DEBUG_NEW
+#endif
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+CNewMove::CNewMove()
+{
+
+}
+
+CNewMove::~CNewMove()
+{
+
+}
