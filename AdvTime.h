@@ -41,7 +41,7 @@
 // CAdvTime Class Definition
 //////////////////////////////////////////////////////////////////////
 
-class CAdvTime : public CObject  
+class CAdvTime //: public CObject  
 {
 
 // Attributes
@@ -52,7 +52,7 @@ private:
 public:
 	CAdvTime()										{ SetCurrent(); };
 	CAdvTime( const double& nValue )				{ SetValue( nValue ); };
-	virtual ~CAdvTime()								{ };
+	//virtual ~CAdvTime()								{ };
 
 // Initialization
 public:

@@ -257,7 +257,7 @@ public:
 	inline void CQuakePacket::ReadShort(short& nGet)
 	{
 		BYTE		*pTemp;
-		register	nCount;
+		register int	nCount;
 
 		pTemp = (BYTE *)&nGet; 
 		for(nCount = 0; nCount < sizeof(short); nCount++)
@@ -276,7 +276,7 @@ public:
 	inline void CQuakePacket::ReadLong(long& nGet)
 	{
 		BYTE		*pTemp;
-		register	nCount;
+		register int	nCount;
 
 		pTemp = (BYTE *)&nGet; 
 		for(nCount = 0; nCount < sizeof(long); nCount++)
@@ -295,7 +295,7 @@ public:
 	inline void CQuakePacket::ReadFloat(float& nGet)
 	{
 		BYTE		*pTemp;
-		register	nCount;
+		register int	nCount;
 
 		pTemp = (BYTE *)&nGet; 
 		for(nCount = 0; nCount < sizeof(float); nCount++)
@@ -351,7 +351,7 @@ public:
 
 	inline void CQuakePacket::ReadString(CString& strReadMe)
 	{
-		register	nCounter = 0;
+		register int	nCounter = 0;
 		BYTE		nTemp;
 
 		strReadMe.Empty();
@@ -373,7 +373,7 @@ public:
 	inline void CQuakePacket::WriteShort(const short& nData)
 	{
 		BYTE*		pTemp;
-		register	nCount;
+		register int	nCount;
 
 		pTemp = (BYTE *)&nData;
 		for (nCount = 0; nCount < sizeof(short); nCount++)
@@ -385,7 +385,7 @@ public:
 	inline void CQuakePacket::WriteLong(const long& nData)
 	{
 		BYTE*		pTemp;
-		register	nCount;
+		register int	nCount;
 
 		pTemp = (BYTE*)&nData;
 		for (nCount = 0; nCount < sizeof(long); nCount++)
@@ -397,7 +397,7 @@ public:
 	inline void CQuakePacket::WriteFloat(const float& nData)
 	{
 		BYTE*		pTemp;
-		register	nCount;
+		register int	nCount;
 
 		pTemp = (BYTE *)&nData;
 		for (nCount = 0; nCount < sizeof(float); nCount++)

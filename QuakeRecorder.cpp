@@ -57,7 +57,7 @@ void CQuakeRecorder::OpenFile()
 	if ( !m_bFileOpen )
 	{
 		CString		strFilename;
-		register	nCount;
+		register int	nCount;
 		BOOL		bFindFile = FALSE;
 
 		nCount = 0;

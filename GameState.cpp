@@ -188,11 +188,11 @@ CBot* CGameState::GetBot()
 
 BOOL CGameState::FindImageName( const CString& strFindMe, BYTE& nIndex ) const
 {
-	register nCount;
+	register int nCount;
 
 	for (nCount = 0; nCount < MAX_IMAGES; nCount++)
 	{
-		CString& strCurrent = m_arrConfigStrings.GetAt( CS_IMAGES + nCount );
+		const CString& strCurrent = m_arrConfigStrings.GetAt( CS_IMAGES + nCount );
 		if ( strCurrent == strFindMe )
 		{
 			nIndex = nCount;
@@ -204,11 +204,11 @@ BOOL CGameState::FindImageName( const CString& strFindMe, BYTE& nIndex ) const
 
 BOOL CGameState::FindItemName( const CString& strFindMe, BYTE& nIndex ) const
 {
-	register nCount;
+	register int nCount;
 
 	for (nCount = 0; nCount < MAX_ITEMS; nCount++)
 	{
-		CString& strCurrent = m_arrConfigStrings.GetAt( CS_ITEMS + nCount );
+		const CString& strCurrent = m_arrConfigStrings.GetAt( CS_ITEMS + nCount );
 		if ( strCurrent == strFindMe )
 		{
 			nIndex = nCount;
@@ -220,11 +220,11 @@ BOOL CGameState::FindItemName( const CString& strFindMe, BYTE& nIndex ) const
 
 BOOL CGameState::FindModelName( const CString& strFindMe, BYTE& nIndex ) const
 {
-	register nCount;
+	register int nCount;
 
 	for (nCount = 0; nCount < MAX_MODELS; nCount++)
 	{
-		CString& strCurrent = m_arrConfigStrings.GetAt( CS_MODELS + nCount );
+		const CString& strCurrent = m_arrConfigStrings.GetAt( CS_MODELS + nCount );
 		if ( strCurrent == strFindMe )
 		{
 			nIndex = nCount;
@@ -236,11 +236,11 @@ BOOL CGameState::FindModelName( const CString& strFindMe, BYTE& nIndex ) const
 
 BOOL CGameState::FindSoundName( const CString& strFindMe, BYTE& nIndex ) const
 {
-	register nCount;
+	register int nCount;
 
 	for (nCount = 0; nCount < MAX_SOUNDS; nCount++)
 	{
-		CString& strCurrent = m_arrConfigStrings.GetAt( CS_SOUNDS + nCount );
+		const CString& strCurrent = m_arrConfigStrings.GetAt( CS_SOUNDS + nCount );
 		if ( strCurrent == strFindMe )
 		{
 			nIndex = nCount;
@@ -284,7 +284,7 @@ BOOL CGameState::NewFrame( const UINT& nFrameNum, const UINT& nOldFrame )
 	}
 	else
 	{
-		register	nCount;
+		register int	nCount;
 	
 		for ( nCount = 0 ; nCount < MAX_EDICTS ; nCount++ )
 		{
@@ -297,7 +297,7 @@ BOOL CGameState::NewFrame( const UINT& nFrameNum, const UINT& nOldFrame )
 
 void CGameState::Clear()
 {
-	register nCount;
+	register int nCount;
 
 	m_nClients = 0;
 	m_nBotNumber = 0;
@@ -312,7 +312,7 @@ void CGameState::Clear()
 
 void CGameState::Reset()
 {
-	register nCount;
+	register int nCount;
 
 	for ( nCount = 0; nCount < MAX_EDICTS ; nCount++ )
 	{
@@ -327,7 +327,7 @@ void CGameState::Reset()
 
 void CGameState::BeginLevel()
 {
-	register	nCount;
+	register int	nCount;
 	CString		strTemp;
 	CEntity*	pTemp = NULL;
 

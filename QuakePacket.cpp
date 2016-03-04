@@ -105,11 +105,11 @@ void CQuakePacket::Dump(CDumpContext& dc) const
 	dc << "\tPosition:		" << GetPosition() << "\n";
 	// Special Format for displaying data in an easy (easier anyway) to read format
 
-	CString		strTemp;
-	CString		strHexData;
-	CString		strRawData;
-	BYTE		nCurrent;
-	register	nCounter;
+	CString			strTemp;
+	CString			strHexData;
+	CString			strRawData;
+	BYTE			nCurrent;
+	register int	nCounter;
 
 #ifdef DUMP_EXTENDED_INFO
 	DWORD	nCheckSum = 0;
@@ -279,7 +279,7 @@ void CQuakePacket::Dump(CDumpContext& dc) const
 	void CQuakePacket::ReadShort(short& nGet)
 	{
 		BYTE		*pTemp;
-		register	nCount;
+		register int	nCount;
 
 		pTemp = (BYTE *)&nGet; 
 		for(nCount = 0; nCount < sizeof(short); nCount++)
@@ -298,7 +298,7 @@ void CQuakePacket::Dump(CDumpContext& dc) const
 	void CQuakePacket::ReadLong(long& nGet)
 	{
 		BYTE		*pTemp;
-		register	nCount;
+		register int	nCount;
 
 		pTemp = (BYTE *)&nGet; 
 		for(nCount = 0; nCount < sizeof(long); nCount++)
@@ -316,8 +316,8 @@ void CQuakePacket::Dump(CDumpContext& dc) const
 
 	void CQuakePacket::ReadFloat(float& nGet)
 	{
-		BYTE		*pTemp;
-		register	nCount;
+		BYTE*			pTemp;
+		register int	nCount;
 
 		pTemp = (BYTE *)&nGet; 
 		for(nCount = 0; nCount < sizeof(float); nCount++)
@@ -422,7 +422,7 @@ void CQuakePacket::Dump(CDumpContext& dc) const
 
 	void CQuakePacket::ReadString(CString& strReadMe)
 	{
-		register nCounter = 0;
+		register int nCounter = 0;
 		char	 chrTemp;
 
 		strReadMe.Empty();
@@ -450,7 +450,7 @@ void CQuakePacket::Dump(CDumpContext& dc) const
 	void CQuakePacket::WriteShort(const short& nData)
 	{
 		BYTE*		pTemp;
-		register	nCount;
+		register int	nCount;
 
 		pTemp = (BYTE *)&nData;
 		for (nCount = 0; nCount < sizeof(short); nCount++)
@@ -462,7 +462,7 @@ void CQuakePacket::Dump(CDumpContext& dc) const
 	void CQuakePacket::WriteLong(const long& nData)
 	{
 		BYTE*		pTemp;
-		register	nCount;
+		register int	nCount;
 
 		pTemp = (BYTE*)&nData;
 		for (nCount = 0; nCount < sizeof(long); nCount++)
@@ -473,8 +473,8 @@ void CQuakePacket::Dump(CDumpContext& dc) const
 
 	void CQuakePacket::WriteFloat(const float& nData)
 	{
-		BYTE*		pTemp;
-		register	nCount;
+		BYTE*			pTemp;
+		register int	nCount;
 
 		pTemp = (BYTE *)&nData;
 		for (nCount = 0; nCount < sizeof(float); nCount++)

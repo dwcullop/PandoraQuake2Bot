@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{047F5AF1-4DF2-4458-82F5-20A4D816BF39}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\Pandora.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\Pandora.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <RedirectOutputAndErrors>NUL</RedirectOutputAndErrors>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\Pandora.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Debug\Pandora.exe</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\Pandora.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\Pandora.tlb</TypeLibraryName>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <RedirectOutputAndErrors>NUL</RedirectOutputAndErrors>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\Pandora.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Release\Pandora.exe</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AboutBox.cpp" />
+    <ClCompile Include="AdvTime.cpp" />
+    <ClCompile Include="AIData.cpp" />
+    <ClCompile Include="AIThread.cpp" />
+    <ClCompile Include="ArmorSpec.cpp" />
+    <ClCompile Include="Bot.cpp" />
+    <ClCompile Include="BotAI.cpp" />
+    <ClCompile Include="BotInfoFrame.cpp" />
+    <ClCompile Include="BotInfoView.cpp" />
+    <ClCompile Include="BotMove.cpp" />
+    <ClCompile Include="BotSystem.cpp" />
+    <ClCompile Include="BotTarget.cpp" />
+    <ClCompile Include="BotThread.cpp" />
+    <ClCompile Include="ConnectDialog.cpp" />
+    <ClCompile Include="ConsoleFrame.cpp" />
+    <ClCompile Include="ConsoleView.cpp" />
+    <ClCompile Include="DangerSpec.cpp" />
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="EntityState.cpp" />
+    <ClCompile Include="GameState.cpp" />
+    <ClCompile Include="HealingSpec.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MapPoint.cpp" />
+    <ClCompile Include="MoveData.cpp" />
+    <ClCompile Include="MoveList.cpp" />
+    <ClCompile Include="Pandora.cpp" />
+    <ClCompile Include="PandoraDoc.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PlayerInfo.cpp" />
+    <ClCompile Include="QuakeClient.cpp" />
+    <ClCompile Include="QuakeConnect.cpp" />
+    <ClCompile Include="QuakePacket.cpp" />
+    <ClCompile Include="QuakeRecorder.cpp" />
+    <ClCompile Include="QuakeSocket.cpp" />
+    <ClCompile Include="SentMove.cpp" />
+    <ClCompile Include="Sound.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="SystemObject.cpp" />
+    <ClCompile Include="TempEntity.cpp" />
+    <ClCompile Include="TextMessage.cpp" />
+    <ClCompile Include="Vector.cpp" />
+    <ClCompile Include="ViewThread.cpp" />
+    <ClCompile Include="WeaponSpec.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Pandora.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AboutBox.h" />
+    <ClInclude Include="AdvTime.h" />
+    <ClInclude Include="AIData.h" />
+    <ClInclude Include="AIThread.h" />
+    <ClInclude Include="ArmorSpec.h" />
+    <ClInclude Include="Bot.h" />
+    <ClInclude Include="BotAI.h" />
+    <ClInclude Include="BotInfoFrame.h" />
+    <ClInclude Include="BotInfoView.h" />
+    <ClInclude Include="BotMove.h" />
+    <ClInclude Include="BotMsgs.h" />
+    <ClInclude Include="BotSystem.h" />
+    <ClInclude Include="BotTarget.h" />
+    <ClInclude Include="BotThread.h" />
+    <ClInclude Include="ConnectDialog.h" />
+    <ClInclude Include="ConsoleFrame.h" />
+    <ClInclude Include="ConsoleView.h" />
+    <ClInclude Include="DangerSpec.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="EntityState.h" />
+    <ClInclude Include="GameState.h" />
+    <ClInclude Include="HealingSpec.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MapPoint.h" />
+    <ClInclude Include="MoveData.h" />
+    <ClInclude Include="MoveList.h" />
+    <ClInclude Include="m_player.h" />
+    <ClInclude Include="NetUtils.h" />
+    <ClInclude Include="Pandora.h" />
+    <ClInclude Include="PandoraDefs.h" />
+    <ClInclude Include="PandoraDoc.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="PlayerInfo.h" />
+    <ClInclude Include="QuakeClient.h" />
+    <ClInclude Include="QuakeConnect.h" />
+    <ClInclude Include="QuakePacket.h" />
+    <ClInclude Include="QuakeRecorder.h" />
+    <ClInclude Include="QuakeSocket.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SentMove.h" />
+    <ClInclude Include="Sound.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="SystemObject.h" />
+    <ClInclude Include="TempEntity.h" />
+    <ClInclude Include="TempEntityNormals.h" />
+    <ClInclude Include="TextMessage.h" />
+    <ClInclude Include="Vector.h" />
+    <ClInclude Include="ViewThread.h" />
+    <ClInclude Include="WeaponSpec.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\Pandora.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Pandora_Q2.ICO" />
+    <Image Include="res\terminal.ico" />
+    <Image Include="res\Toolbar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

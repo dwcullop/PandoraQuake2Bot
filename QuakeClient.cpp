@@ -489,7 +489,7 @@ void CQuakeClient::SendMove()
 		CMoveData*		pToSend;
 		BYTE			nCheckSum;
 		BYTE			nRenderTime;
-		register		nCount;
+		register int	nCount;
 
 		pSendMove = new CQuakePacket;
 		pSendMove->WriteLong( GetFrameNumber() );
@@ -683,7 +683,7 @@ void CQuakeClient::DecodeLayout( CQuakePacket* pData )
 void CQuakeClient::DecodeInventory( CQuakePacket* pData )
 {
 	CBot*		pBot = GetBot();
-	register	nCount;
+	register int	nCount;
 	WORD		nAmount;
 
 	for (nCount = 0; nCount < MAX_ITEMS; nCount++)
@@ -823,7 +823,7 @@ void CQuakeClient::DecodePlayerInfo( CQuakePacket* pData )
 {
 	CPlayerInfo*	pCurrent = GetBot()->GetPlayerInfoPtr();
 	UINT			nBitMask = pData->ReadShort();
-	register		nCount;
+	register int	nCount;
 
 	// TODO: #define the bitmask values
 	if (nBitMask & 0x0001)

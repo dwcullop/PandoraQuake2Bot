@@ -134,12 +134,12 @@ CString CAdvTime::GetString() const
 #ifdef _DEBUG
 void CAdvTime::AssertValid() const
 {
-	CObject::AssertValid();
+	//CObject::AssertValid();
 }
 
 void CAdvTime::Dump(CDumpContext& dc) const
 {
-	CObject::Dump(dc);
+	//CObject::Dump(dc);
 	dc << GetString();
 }
 

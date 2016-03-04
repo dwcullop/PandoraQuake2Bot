@@ -60,9 +60,9 @@ CString CTextMessage::GetFiltered() const
 
 void CTextMessage::GetFiltered( CString& strFiltered ) const
 {
-	BYTE		nCurrent;
-	register	nCount;
-	WORD		nLength	= m_strText.GetLength();
+	BYTE			nCurrent;
+	register int	nCount;
+	WORD			nLength	= m_strText.GetLength();
 
 	strFiltered = m_strText;
 	for (nCount = 0; nCount < nLength; nCount++)

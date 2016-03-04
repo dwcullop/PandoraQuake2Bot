@@ -492,7 +492,7 @@ void CAIThread::ResetAI()
 void CAIThread::RespawnOne()
 {
 	m_bmCurrent.Clear();
-	m_pDoMove = RespawnTwo;
+	m_pDoMove = &CAIThread::RespawnTwo;
 }
 
 void CAIThread::RespawnTwo()
@@ -549,7 +549,7 @@ void CAIThread::RandomMove()
 void CAIThread::GetAttackTarget()
 {
 	// TODO: Make this more better
-	m_pAttackTarget = FindBestPlayer( Closest );
+	m_pAttackTarget = FindBestPlayer( &CBotAI::Closest );
 }
 
 void CAIThread::GetMoveTarget()
@@ -572,7 +572,7 @@ BOOL CAIThread::InitInstance()
 	SetClient( m_pBotDoc );
 	SetGameState( m_pBotDoc );
 	m_aiGameData.ReadDataFile("gamedata.txt");
-	m_pDoMove = NormalMove;
+	m_pDoMove = &CAIThread::NormalMove;
 	return TRUE;
 }
 
@@ -597,7 +597,7 @@ void CAIThread::UpdateInfo( const UINT& nResID )
 void CAIThread::SelectMove()
 {
 	// TODO: Make this less useless
-	m_pDoMove = NormalMove;
+	m_pDoMove = &CAIThread::NormalMove;
 	// This should never be NULL when exiting this function
 	ASSERT( m_pDoMove != NULL );
 }
@@ -629,7 +629,7 @@ END_MESSAGE_MAP()
 
 void CAIThread::OnBotKilled( const WORD nDeaths )
 {
-	m_pDoMove = RespawnOne;
+	m_pDoMove = &CAIThread::RespawnOne;
 	m_pAttackTarget = NULL;
 	m_pMoveTarget = NULL;
 }
@@ -661,7 +661,7 @@ void CAIThread::OnBotUpdateAttackTarget()
 
 void CAIThread::OnBotUpdateInventory()
 {
-	m_pDoMove = NewInventoryMove;
+	m_pDoMove = &CAIThread::NewInventoryMove;
 }
 
 void CAIThread::OnBotUpdateGunIndex()
@@ -711,7 +711,7 @@ void CAIThread::OnBotUpdateVelocity()
 	{
 		if ( IsBotStuck() )
 		{
-			m_pDoMove = RandomMove;
+			m_pDoMove = &CAIThread::RandomMove;
 		}
 		m_pBot = NULL;
 	}

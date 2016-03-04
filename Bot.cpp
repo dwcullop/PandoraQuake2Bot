@@ -80,7 +80,7 @@ void CBot::Clear()
 
 void CBot::Reset()
 {
-	register nCount;
+	register int nCount;
 
 	for (nCount = 0; nCount < MAX_FRAMES; nCount++)
 	{

@@ -120,7 +120,7 @@ protected:
 	BOOL			IsPathClear( const CVector&, const CVector& );
 
 // Sorting Functions
-protected:
+public:
 	CPlayer*		SortPlayer( CPlayer*, CPlayer*, CEntity* (CBotAI::*)(CEntity*, CEntity*) );
 	CEntity*		Closest( CEntity*, CEntity* );
 };

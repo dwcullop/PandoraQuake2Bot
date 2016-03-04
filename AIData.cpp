@@ -119,7 +119,7 @@ const CWeaponSpec* CAIData::GetWeaponData( const BYTE& nIndex )
 
 const CWeaponSpec* CAIData::FindWeaponByMuzzleFlash( const BYTE& nMZ )
 {
-	register			nCount;
+	register int			nCount;
 	const CWeaponSpec*	pReturn = NULL;
 
 	for ( nCount = 0 ; ( (nCount < GetWeaponCount()) && (pReturn == NULL) ) ; nCount++ )
@@ -134,7 +134,7 @@ const CWeaponSpec* CAIData::FindWeaponByMuzzleFlash( const BYTE& nMZ )
 
 const CWeaponSpec* CAIData::FindWeaponByViewModel( const BYTE& nModelIndex )
 {
-	register			nCount;
+	register int			nCount;
 	BYTE				nViewType;
 	const CWeaponSpec*	pReturn = NULL;
 
@@ -205,23 +205,23 @@ BOOL CAIData::ReadDataFile( const CString& strFilename )
 		{
 			if ( !strCurrentLine.CompareNoCase("[ModelTypes]") )
 			{
-				pHandler = ParseModelTypes;
+				pHandler = &CAIData::ParseModelTypes;
 			}
 			else if ( !strCurrentLine.CompareNoCase("[Armor]") )
 			{
-				pHandler = ParseArmorData;
+				pHandler = &CAIData::ParseArmorData;
 			}
 			else if ( !strCurrentLine.CompareNoCase("[Danger]") )
 			{
-				pHandler = ParseDangerData;
+				pHandler = &CAIData::ParseDangerData;
 			}
 			else if ( !strCurrentLine.CompareNoCase("[Healing]") )
 			{
-				pHandler = ParseHealingData;
+				pHandler = &CAIData::ParseHealingData;
 			}
 			else if ( !strCurrentLine.CompareNoCase("[Weapons]") )
 			{
-				pHandler = ParseWeaponData;
+				pHandler = &CAIData::ParseWeaponData;
 			}
 			else
 			{
@@ -238,7 +238,7 @@ BOOL CAIData::ReadDataFile( const CString& strFilename )
 
 void CAIData::ProcessNewConfigStrings( CGameState* pGame )
 {
-	register	nCount;
+	register int	nCount;
 	BYTE		nValue;
 
 	ASSERT( pGame != NULL );

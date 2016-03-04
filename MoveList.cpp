@@ -119,7 +119,7 @@ void CMoveList::BeginLevel()
 {
 	Lock();
 	Reset();
-	for ( register nCount = 0 ; nCount < MOVE_FRAMES ; nCount++ )
+	for ( register int nCount = 0 ; nCount < MOVE_FRAMES ; nCount++ )
 	{
 		m_pMoves[nCount] = new CMoveData;
 	}
@@ -128,7 +128,7 @@ void CMoveList::BeginLevel()
 
 void CMoveList::Reset()
 {
-	register nCount;
+	register int nCount;
 
 	for ( nCount = 0 ; nCount < MOVE_FRAMES ; nCount++ )
 	{
@@ -142,7 +142,7 @@ void CMoveList::Reset()
 
 void CMoveList::Clear()
 {
-	register nCount;
+	register int nCount;
 
 	for ( nCount = 0 ; nCount < MOVE_FRAMES ; nCount++ )
 	{
@@ -163,7 +163,7 @@ void CMoveList::Clear()
 
 void CMoveList::AddFrame( CMoveData* pNew )
 {
-	register nCount;
+	register int nCount;
 
 	Lock();
 	ASSERT( m_pMoves[MOVE_FRAMES - 1] != NULL );	// This should never happen

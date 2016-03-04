@@ -55,7 +55,7 @@ END_MESSAGE_MAP()
 
 CQuakeSocket::CQuakeSocket()
 {
-	register nCount;
+	register int nCount;
 
 	for ( nCount = 0; nCount < PING_HISTORY_SIZE ; nCount++ )
 	{
@@ -164,7 +164,7 @@ void CQuakeSocket::OnReceive( int nErrorCode )
 void CQuakeSocket::SendConnectionless( const CString& strMessage )
 {
 	CQuakePacket*	pConnectionless = new CQuakePacket;
-	register		nCounter = 0;
+	register int	nCounter = 0;
 
 	pConnectionless->WriteLong( -1 );
 	while ( nCounter < strMessage.GetLength() )
@@ -406,8 +406,8 @@ void CQuakeSocket::ProcessDataPacket( CQuakePacket* pNew )
 		m_nPingHistory[m_nPingHistoryIndex] = ( (WORD)((m_tCurrentPacket.GetValue() / 2.0) * 1000) );
 		if ( m_nPingHistory[ PING_HISTORY_SIZE-1 ] )
 		{
-			register	nCount;
-			WORD		nSum = 0;
+			register int	nCount;
+			WORD			nSum = 0;
 
 			for ( nCount = 0 ; nCount < PING_HISTORY_SIZE ; nCount++)
 			{

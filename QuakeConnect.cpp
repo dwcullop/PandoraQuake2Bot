@@ -330,7 +330,7 @@ void CQuakeConnect::OnDisconnected()
 
 WORD CQuakeConnect::DoChecksumCRC( BYTE* pBuffer, BYTE nLength ) const
 {
-	register	nCount;
+	register int	nCount;
 	WORD		nReturn = 0xFFFF;
 
 	if ( nLength != 0 )

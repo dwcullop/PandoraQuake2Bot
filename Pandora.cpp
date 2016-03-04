@@ -99,7 +99,7 @@ BOOL CPandoraApp::InitInstance()
 	LoadStdProfileSettings(0);
 	AfxEnableControlContainer();
 
-	// Register the application's document templates.  Document templates
+	// register int the application's document templates.  Document templates
 	//  serve as the connection between documents, frame windows and views.
 
 	m_pConsoleTemplate = new CMultiDocTemplate(

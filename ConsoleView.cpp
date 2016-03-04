@@ -69,8 +69,8 @@ void CConsoleView::WriteString( const CString& strText )
 
 void CConsoleView::DisplayText( const CString& strText, const COLORREF crText, const BYTE nOptions )
 {
-	CHARFORMAT charFormat;
-	PARAFORMAT pf;
+	CHARFORMAT2 charFormat;
+	PARAFORMAT2 pf;
 
 	// Set the font info
 	charFormat.crTextColor = crText;
@@ -153,7 +153,7 @@ BOOL CConsoleView::OnDrop(COleDataObject* pDataObject, DROPEFFECT dropEffect, CP
 
 void CConsoleView::OnShowWindow(BOOL bShow, UINT nStatus) 
 {
-	CHARFORMAT csConsole;
+	CHARFORMAT2 csConsole;
 
 	CRichEditView::OnShowWindow(bShow, nStatus);
 	GetRichEditCtrl().LimitText( -1 );	// Prevents the user from adding text

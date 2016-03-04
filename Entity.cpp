@@ -200,7 +200,7 @@ void CEntity::NewFrame( const UINT& nCurrent, const UINT& nRef )
 
 void CEntity::Reset()
 {
-	register nCount;
+	register int nCount;
 
 	for ( nCount = 0; nCount < MAX_FRAMES; nCount++ )
 	{
